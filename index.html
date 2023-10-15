@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+      /* Стили CSS */
+    </style>
+  </head>
+  <body background="/bg.png" style="width:1280px;height:648px;background-color:#5B89AD">
+  
+    <!-- Удаление таблицы с сообщением о проверке firmware -->
+    <!-- <table id="launch_options" align="center">
+      <tr>
+        <td><p id="no_scripts">There are no scripts compatible with your firmware version.</p></td>
+      </tr>
+    </table> -->
+
+    <table id="loading" class="hidden" align="center">
+      <!-- Таблица с отображением загрузки -->
+    </table>
+
+    <table id="after_launch" class="hidden" align="center">
+      <!-- Таблица с сообщением после запуска -->
+    </table>
+
+    <table id="exit" class="hidden" align="center">
+      <!-- Таблица с сообщением о выходе -->
+    </table>
+
+    <p id="footer">based on pegaswitch by reswitched | background art by bernv3<br>detected firmware unknown</p>
+
+    <script>
+      // Оставляем функции scriptSelected(), showAlbumMessage(), и showExitMessage() без изменений
+    </script>
+
+    <button id="run" class='hidden' onclick="window.minmain();">RUN</button>
+
+    <script src="minmain.js"></script>
+  </body>
+</html>
